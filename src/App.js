@@ -1,18 +1,19 @@
 // import React from "react";
-import {  Link,  Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link,  Route, Routes } from "react-router-dom";
 import Home from "./Home";
 function App(){
   return(
     <div>
-     
+      <BrowserRouter>
       <Link to="/home"> Home </Link>
   
       <Routes>
        <Route path="/" element= { <Aboute />} />
+        
        <Route path="/home" element= {<Home />} />
       </Routes>
       
-      
+      </BrowserRouter>
     </div>
   )
 }
